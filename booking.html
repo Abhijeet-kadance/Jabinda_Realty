@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Free Visit</title>
+    <link rel="stylesheet" href="dist/css/main.min.css">
+    <link rel="stylesheet" href="dist/css/booking.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="/index.html" class="logo"><img src="Assets/Logo_black.svg" alt=""></a>
+        <nav>
+         <svg class="close" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <path d="M512 64C264.6 64 64 264.6 64 512C64 759.4 264.6 960 512 960C759.4 960 960 759.4 960 512C960 264.6 759.4 64 512 64ZM677.4 682.2L611.4 681.9L512 563.4L412.7 681.8L346.6 682.1C342.2 682.1 338.6 678.6 338.6 674.1C338.6 672.2 339.3 670.4 340.5 668.9L470.6 513.9L340.5 359C339.292 357.534 338.621 355.699 338.6 353.8C338.6 349.4 342.2 345.8 346.6 345.8L412.7 346.1L512 464.6L611.3 346.2L677.3 345.9C681.7 345.9 685.3 349.4 685.3 353.9C685.3 355.8 684.6 357.6 683.4 359.1L553.5 514L683.5 669C684.7 670.5 685.4 672.3 685.4 674.2C685.4 678.6 681.8 682.2 677.4 682.2Z" fill="white"/>
+             </svg>
+            <!-- <ul>
+                <li><a data-aos="fade-up" data-aos-duration="800" href="#">Amenities</a></li>
+                <li><a data-aos="fade-up" data-aos-duration="800"  data-aos-delay="100" class="nav-cta" href="/booking.html">Book a Visit</a></li>
+            </ul> -->
+        </nav>
+        <a href="#" class="menu"><img src="assets/Icons/menu_black.svg" alt=""></a>
+    </header>
+
+    <section class="form-section">
+        <div class="form-container">
+            <div class="form-img">
+
+            </div>
+            
+            <form action="">
+                <h2 a data-aos="fade-up" data-aos-duration="800"  class="form-heading">Don't Miss out on a free visit</h2>
+                <h5 a data-aos="fade-up" data-aos-duration="800"  data-aos-delay="100" class="form-desc">Book your visit below</h5>
+                <div class="form-wrapper">
+                    <label for="Name">Name</label>
+                    <input type="text" name="Name" id="" placeholder="Your Name">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="" placeholder="youremail@mail.com">
+                    <label for="tel">Mobile No.</label>
+                    <input type="tel" name="" id="">
+                    <input type="button" value="Book Now">
+                </div>
+            </form>
+            
+        </div>
+       </section>
+       <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                
+                <div>
+                    <p class="line">Project by</p>
+                </div>
+ 
+                <div>
+                     <p class="line">Architect</p>
+                     <h5>IP Associates</h5>
+                 </div>
+ 
+                 <div>
+                     <p class="line">RCC Consultant</p>
+                     <h5>Anhera Enterprise</h5>
+                 </div>
+ 
+                 <div>
+                     <p class="line">Legal Advisor</p>
+                     <h5>Adv S.R. Nahri</h5>
+                 </div>
+            </div>
+ 
+            <div class="footer-grid">
+ 
+                <div class="footer-info">
+                    <img src="assets/Icons/location.svg" alt="">
+                    <p class="medium">Site Address:</p>
+                    <p>Jabinda Grandeur, Survey No 25, Jabinda Estate, Beed by Pass Road, Aurangabad -431005</p>
+                </div>
+ 
+                <div class="footer-info">
+                 <img src="assets/Icons/location.svg" alt="">
+                 <p class="medium">Office Address:</p>
+                 <p>Jabinda Grandeur, Survey No 25, Jabinda Estate, Beed by Pass Road, Aurangabad -431005</p>
+             </div>
+ 
+             <div class="footer-info">
+                 <img src="assets/Icons/phone.svg" alt="">
+                 <p class="medium">Phone:</p>
+                 <p>+91 7066 000 150</br>
+                     +91 9823 063 692 </br>
+                     +91 9823 119 692 </br>
+                     +91 8080 355 938 </br></p>
+             </div>
+ 
+             <div class="footer-info">
+                 <img src="assets/Icons/Email.svg" alt="">
+                 <p class="medium">Email:</p>
+                 <p class="email">as.jabinda@gmail.com</p>
+             </div>
+ 
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/js/parallax.js"></script>
+    <script>
+        
+        const menu = document.querySelector('.menu')
+        const nav = document.querySelector('nav')
+        const close = document.querySelector ('.close')
+
+
+        menu.addEventListener('click', ()=>{
+            nav.classList.add('open-nav')
+        })
+        
+        close.addEventListener('click', ()=>{
+            nav.classList.remove('open-nav')
+        })
+
+        
+
+    </script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+          AOS.init();
+      </script>
+</body>
+</html>

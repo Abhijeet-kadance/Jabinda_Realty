@@ -1,0 +1,132 @@
+.form-wrapper {
+    background: #ffffff;
+    display: grid;
+    padding-top: 0;
+}
+
+form {
+    padding: 1em;
+}
+
+h5.form-desc {
+    text-align: left;
+    color: #7B61FF
+}
+
+h2.form-heading {
+    text-align: left;
+    font-size: 2.2em;
+    line-height: 1em;
+    width: 90%;
+}
+
+label {
+    margin-bottom: 0.4em;
+    color:rgb(82, 82, 82);
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #585858;
+}
+
+
+input[type=text],input[type=email],input[type=tel] {
+    padding: 0.8em 1em;
+    border: none;
+    background: #dedde6;
+    margin-bottom: 0.5em;
+    border-radius: 0.5em;
+
+    &::placeholder {
+        color: #686574;
+    }
+    
+    &:focus {
+        outline: 2px solid #4d36c2;
+        background: #ffffff;
+    }
+}
+
+input[type=button] {
+    
+    text-decoration: none;
+    color: #ffffff;
+    background: #7B61FF;
+    padding: 1em;
+    display: flex;
+    width: 100%;
+    margin: 0em auto;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2em;
+    border-radius: 25em;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;    
+        &:hover {
+            color:#1A1A1A;
+            background: #E5C414;
+        }
+    
+}
+
+.form-img {
+    background: url(/Assets/Form_mobile.png);
+    height: 35vh;
+    background-size: cover;
+    background-position: center center;
+}
+
+header {
+    background: #fff;
+}
+
+a.nav-cta {
+    border: 1px solid #1A1A1A!important;
+    color: #1A1A1A!important;
+    
+}
+
+nav {
+    ul {
+        li {
+            a {
+                color: #1A1A1A;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+    .form-container {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 4em;
+        align-items: center;
+    }
+
+    .form-img {
+        height: 90vh;
+        background: url(/Assets/form_desktop.png);
+        background-size: cover;
+    }
+
+    input[type=button] {
+        width: 15em;
+        display: block;
+        margin: 0;
+        margin-top: 1em;
+    }   
+
+    .form-img {
+        width: 40%;
+    }
+    form {
+        width: 60%;
+        padding-left: 12%;
+    }
+
+    input[type=text],input[type=email],input[type=tel] {
+        width: 70%;
+        
+    }
+}
